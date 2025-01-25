@@ -1,10 +1,14 @@
+
+
+
 {
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "npm run nodemon"
+    "build": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +18,9 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "groq-sdk": "^0.12.0",
+    "groq-sdk": "^0.12.0"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.9"
   }
 }
