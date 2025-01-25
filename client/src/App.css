@@ -1,0 +1,23 @@
+.submit-btn{
+    transition: all ease 0.5s;
+  }
+  
+  .submit-btn:hover{
+    background-color:rgb(139, 92, 246);
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  
+  
+  .output{
+    height: calc(100vh - 150px);
+  }
+  
+  /* .input-box{
+    box-shadow: inset 2px 2px 3px #d9d9d9, 
+                inset -2px -2px 3px #ffffff, 
+                2px 2px 3px #d9d9d9, 
+                -2px -2px 3px #ffffff;
+  } */
+  
