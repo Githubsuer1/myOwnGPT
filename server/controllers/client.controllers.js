@@ -20,7 +20,7 @@ function handleChatCompletionResponse(res, chatCompletion) {
 
 // controller to handle the groq api
 async function handleGroqAPI(req, res) {
-  try {
+  try { 
     const { input } = req.body;
 
     // Input validation
