@@ -9,7 +9,7 @@ const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 // Helper function to handle error responses
 function handleError(res, error) {
-  console.error(error);
+  // console.error(error);
   return res.status(500).json({ error: "Internal Server Error" });
 }
 
