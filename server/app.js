@@ -13,7 +13,7 @@ const app = express();
 // middlewares
 app.use(express.json());
 app.use(cors({
-    origin:"https://my-own-gpt-frontend.vercel.app/",
+    origin:"*",
 }))
 app.use(express.static('public/temp'));
 app.use(express.json());
