@@ -10,7 +10,7 @@ export default defineConfig({
   ],
   server:{
     proxy:{
-      '/api':"http://localhost:8000"
+      '/api':"https://my-own-gpt.vercel.app/"
     }
   },
 })
