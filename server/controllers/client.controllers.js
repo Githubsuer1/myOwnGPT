@@ -50,6 +50,11 @@ async function handleGroqAPI(req, res) {
 }
 
 
+function getResponse(req, res) {
+  res.send("Hello from the server");
+}
+
 export {
     handleGroqAPI,
+    getResponse,
 }
