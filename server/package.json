@@ -6,7 +6,9 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "build": "node build.js",
+    "start": "node app.js",
+    "vercel": "vercel build && vercel deploy"
   },
   "author": "",
   "license": "ISC",
