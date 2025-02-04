@@ -25,7 +25,7 @@ async function handleGroqAPI(req, res) {
 
     // Input validation
     if (!input || input.trim() === "") {
-      return res.status(400).json({ error: "Invalid input" });
+      return res.status(400).json({ error: "Invalid input | Please enter valid input!" });
     }
 
     const chatCompletion = await groq.chat.completions.create({
