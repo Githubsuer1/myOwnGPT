@@ -14,7 +14,7 @@ function App() {
     setLoading(true); // Start loading
     try {
       const response = await axios.post('/api/v1/gpt/user', { input });
-      // console.log(response.config);
+      // console.log(response);
       
       if (!response) {
         console.log("No response");
@@ -23,7 +23,9 @@ function App() {
       setOutput(response.data);
       setInput("");
     } catch (error) {
-      console.log("response error", error);
+      setOutput(error.response.data.error)
+      setInput("");
+      // console.log(error.response.data);
     } finally {
       setLoading(false); // End loading
     }
