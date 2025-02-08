@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "functions": {
-    "api/*": {
-      "memory": 128,
-      "maxDuration": 10
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
     }
-  }
+  ],
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/app.js" }
+  ]
 }

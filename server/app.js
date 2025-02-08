@@ -3,7 +3,7 @@ import cors from 'cors';
 import clientRouter from './routes/client.routes.js';
 
 // setting up port
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 4000;
 
 
 // creating instance of express application 

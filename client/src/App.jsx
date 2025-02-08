@@ -13,7 +13,7 @@ function App() {
     e.preventDefault();
     setLoading(true); // Start loading
     try {
-      const response = await axios.post('/api/v1/gpt/user', { input });
+      const response = await axios.post('/api/user', { input });
       // console.log(response);
       
       if (!response) {
