@@ -13,7 +13,7 @@ function App() {
     e.preventDefault();
     setLoading(true); // Start loading
     try {
-      const response = await axios.post('/api/v1/gpt', { input });
+      const response = await axios.post('https://my-own-gpt.vercel.app/api/v1/gpt', { input });
       // console.log(response);
       
       if (!response) {
